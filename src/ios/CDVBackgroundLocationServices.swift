@@ -334,7 +334,7 @@ class LocationManager : NSObject, CLLocationManagerDelegate {
             let longitude = bestLocation!.coordinate.longitude;
             let accuracy = bestLocation!.horizontalAccuracy;
 
-            var msg = "Got Location Update:  { \(latitude) - \(longitude) }  Accuracy: \(accuracy)";
+            var msg = "Spotted you here:  { \(latitude) - \(longitude) }  Accuracy: \(accuracy)";
             
             if(useActivityDetection) {
                     msg += " Stationary : \(activityManager.isStationary)";
